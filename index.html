@@ -363,75 +363,90 @@
         }
 
         /* head of domains decoration  */
-        #heads {
-            padding: 80px 20px;
-            background: #f1f6f3;
-            text-align: center;
-        }
-
-        #heads h2 {
-            color: #064e3b;
-            font-size: 2.2rem;
-        }
-
-        #heads h2::after {
-            content: "";
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: #e6a100;
-            margin: 10px auto 0;
-            border-radius: 5px;
-        }
-
-        .heads-intro {
-            color: #4b5563;
-            margin: 20px 0 40px;
-            font-size: 1.1rem;
-        }
-
-        .table-wrap {
-            max-width: 850px;
-            margin: auto;
-            overflow-x: auto;
-            border-radius: 14px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-        }
-
-        .heads-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            min-width: 480px;
-        }
-
-        .heads-table th {
-            background: #064e3b;
-            color: #ffd23f;
-            padding: 16px;
-            letter-spacing: 1px;
-        }
-
-        .heads-table td {
-            padding: 16px;
-            border-bottom: 1px solid #e5e7eb;
-            color: #2b2b2b;
-        }
-
-        .heads-table td.dept {
-            background: #fffbe6;
-            color: #064e3b;
-            font-weight: bold;
-            border-right: 4px solid #e6a100;
-        }
-
-        .heads-table tbody {
-            border-bottom: 3px solid #e6a100;
-        }
-
-        .heads-table tbody tr:hover td:not(.dept) {
-            background: #fff8d6;
-        }
+    #heads{
+    padding: 80px 20px;
+    background: #f1f6f3;
+    text-align: center;
+}
+#heads h2{
+    color: #064e3b;
+    font-size: 2.2rem;
+}
+#heads h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #e6a100;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+.heads-intro{
+    color: #4b5563;
+    margin: 20px 0 40px;
+    font-size: 1.1rem;
+}
+.table-wrap{
+    max-width: 1000px;
+    margin: auto;
+    overflow-x: auto;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.heads-table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    min-width: 680px;
+}
+.heads-table th{
+    background: #064e3b;
+    color: #ffd23f;
+    padding: 16px 14px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.heads-table th.yr{ text-align: center; }
+.heads-table td{
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #2b2b2b;
+    text-align: left;
+}
+.heads-table td.yr{ text-align: center; }
+.heads-table td.dom{
+    background: #fffbe6;
+    color: #064e3b;
+    font-weight: bold;
+    vertical-align: middle;
+    border-right: 4px solid #e6a100;
+}
+.heads-table tbody{
+    border-bottom: 3px solid #e6a100;
+}
+.heads-table tr.sep td:not(.dom){
+    border-top: 2px solid #d1d5db;
+}
+.heads-table tbody tr:hover td:not(.dom){
+    background: #fff8d6;
+}
+.role{
+    display: inline-block;
+    background: #fff3b0;
+    color: #8a5a00;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.role.co{
+    background: #d1fae5;
+    color: #065f46;
+}
+.vacant{
+    color: #9ca3af;
+    font-style: italic;
+}
 
         /* FORM DECORATION HERE  */
         #ideas {
@@ -812,70 +827,221 @@
             </div>
         </section>
         <!-- Heads of Domains -->
-        <section id="heads">
-            <h2>HEADS OF DOMAINS</h2>
-            <p class="heads-intro">Meet the heads representing every department</p>
+       <section id="heads">
+    <h2>Heads of Domains</h2>
+    <p class="heads-intro">Meet the team leading every domain of CBS</p>
 
-            <div class="table-wrap">
-                <table class="heads-table">
-                    <thead>
-                        <tr>
-                            <th>Department</th>
-                            <th>Head Name</th>
-                            <th>Semester</th>
-                        </tr>
-                    </thead>
+    <div class="table-wrap">
+        <table class="heads-table">
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Responsibility</th>
+                    <th>Name</th>
+                    <th class="yr">Year</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
 
-                    <tbody>
-                        <tr>
-                            <td class="dept" rowspan="2">💻 Software Engineering</td>
-                            <td>Name Here</td>
-                            <td>Semester</td>
-                        </tr>
-                        <tr>
-                            <td>Name Here</td>
-                            <td>Semester</td>
-                        </tr>
-                    </tbody>
+            <!-- Events & Management -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="3">🎪 Events &amp; Management</td>
+                    <td><span class="role">Head</span></td>
+                    <td>Faisal Khattak</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Electronics</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Khadija</td>
+                    <td class="yr">5th Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role co">Co-Head</span></td>
+                    <td>Saman Saqil</td>
+                    <td class="yr">2nd Year</td>
+                    <td>Computer</td>
+                </tr>
+            </tbody>
 
-                    <tbody>
-                        <tr>
-                            <td class="dept" rowspan="2">🖥️ Computer Science</td>
-                            <td>Name Here</td>
-                            <td>Semester</td>
-                        </tr>
-                        <tr>
-                            <td>Name Here</td>
-                            <td>Semester</td>
-                        </tr>
-                    </tbody>
+            <!-- Academic & Welfare -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="3">🎓 Academic &amp; Welfare</td>
+                    <td><span class="role">Head</span></td>
+                    <td>Abdullah</td>
+                    <td class="yr">4th Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Laila Faisal</td>
+                    <td class="yr">1st Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role co">Co-Head</span></td>
+                    <td>Asma Rafiq</td>
+                    <td class="yr">2nd Year</td>
+                    <td>Electronics</td>
+                </tr>
+            </tbody>
 
-                    <tbody>
-                        <tr>
-                            <td class="dept" rowspan="2">📐 Architecture</td>
-                            <td> Name Here</td>
-                            <td>Semester</td>
-                        </tr>
-                        <tr>
-                            <td>Name Here</td>
-                            <td>Semester</td>
-                        </tr>
-                    </tbody>
+            <!-- Media -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="3">📸 Media</td>
+                    <td><span class="role">Coverage Head</span></td>
+                    <td>Hassan</td>
+                    <td class="yr">4th Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Reels &amp; Content</span></td>
+                    <td>Manahil</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Publication Head</span></td>
+                    <td>Furan Hameed</td>
+                    <td class="yr">4th Year</td>
+                    <td>Architecture</td>
+                </tr>
+            </tbody>
 
-                    <tbody>
-                        <tr>
-                            <td class="dept" rowspan="2">⚡ Electronics</td>
-                            <td> Name Here</td>
-                            <td>Semester</td>
-                        </tr>
-                        <tr>
-                            <td> Name Here</td>
-                            <td> Semester</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+            <!-- Finance -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="3">💰 Finance</td>
+                    <td><span class="role">Head</span></td>
+                    <td>Gul Wazir</td>
+                    <td class="yr">5th Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Aisha</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Software</td>
+                </tr>
+                <tr>
+                    <td><span class="role co">Co-Head</span></td>
+                    <td>Linta Maryam</td>
+                    <td class="yr">2nd Year</td>
+                    <td>Software</td>
+                </tr>
+            </tbody>
+
+            <!-- Record -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="2">📋 Record</td>
+                    <td><span class="role">Head</span></td>
+                    <td>Humna Ahmad Jan</td>
+                    <td class="yr">1st Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Umer Hayat</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Electronics</td>
+                </tr>
+            </tbody>
+
+            <!-- Islamic -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="2">🕌 Islamic</td>
+                    <td><span class="role">Head</span></td>
+                    <td>Ammar</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Computer</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Maryam</td>
+                    <td class="yr">1st Year</td>
+                    <td>Software</td>
+                </tr>
+            </tbody>
+
+            <!-- Volunteer Management -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="2">🤝 Volunteer Management</td>
+                    <td><span class="role">Head</span></td>
+                    <td>Farhan</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Saba Rafiq</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Software</td>
+                </tr>
+            </tbody>
+
+            <!-- Inter Dept -->
+            <tbody>
+                <tr>
+                    <td class="dom" rowspan="8">🏛️ Inter Dept</td>
+                    <td><span class="role">Head</span></td>
+                    <td>Talha Ahmad</td>
+                    <td class="yr">4th Year</td>
+                    <td>Electronics</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Ayman</td>
+                    <td class="yr">2nd Year</td>
+                    <td>Electronics</td>
+                </tr>
+                <tr class="sep">
+                    <td><span class="role">Head</span></td>
+                    <td>Khushaal Khan</td>
+                    <td class="yr">5th Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Parsa Khalid</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Architecture</td>
+                </tr>
+                <tr class="sep">
+                    <td><span class="role">Head</span></td>
+                    <td>Abdur Rehman Khan</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Software</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td>Waleeja Eman</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Software</td>
+                </tr>
+                <tr class="sep">
+                    <td><span class="role">Head</span></td>
+                    <td>Jamal Manan</td>
+                    <td class="yr">3rd Year</td>
+                    <td>Computer</td>
+                </tr>
+                <tr>
+                    <td><span class="role">Head</span></td>
+                    <td class="vacant">Vacant Seat</td>
+                    <td class="yr">—</td>
+                    <td>Computer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
         <section id="ideas">
             <h2>Share Your Idea</h2>
             <p class="ideas-intro">Have an idea for CBS? We would love to hear it.</p>
