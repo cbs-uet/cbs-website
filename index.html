@@ -891,7 +891,7 @@
                 <span class="year-badge">2024 – 2026</span>
                 <div class="cabinet-grid">
                     <div class="member-card">
-                        <div class="avatar">GS</div>
+                        <div class="avatar"><img src="images/mam-Ghousia.jpeg" alt="404"></div>
                         <h3>Dr. Ghousia Saeed</h3>
                         <p>Faculty Head</p>
                     </div>
@@ -912,7 +912,7 @@
                 <span class="year-badge">2026 – 2027</span>
                 <div class="cabinet-grid">
                     <div class="member-card">
-                        <div class="avatar">?</div>
+                        <div class="avatar"><img src="images/mam-Ghousia.jpeg" alt="404"></div>
                         <h3>Dr. Ghousia Saeed</h3>
                         <p>Faculty Head</p>
                     </div>
@@ -1092,7 +1092,7 @@
             <!-- Inter Dept -->
             <tbody>
                 <tr>
-                    <td class="dom" rowspan="8">🏛️ Inter Dept</td>
+                    <td class="dom" rowspan="9">🏛️ Inter Dept</td>
                     <td><span class="role">Head</span></td>
                     <td>Talha Ahmad</td>
                     <td class="yr">4th Year</td>
@@ -1130,16 +1130,25 @@
                 </tr>
                 <tr class="sep">
                     <td><span class="role">Head</span></td>
+                    <td>Yahya Amen</td>
+                    <td class="yr">_</td>
+                    <td>Computer</td>
+                </tr>
+                <tr class="sep">
+                    <td><span class="role">Head</span></td>
+                    <td>Noria Khan</td>
+                    <td class="yr">2nd Year</td>
+                    <td>Computer</td>
+                </tr>
+                
+                <tr class="sep">
+                    <td><span class="role">Head</span></td>
                     <td>Jamal Manan</td>
                     <td class="yr">3rd Year</td>
                     <td>Computer</td>
                 </tr>
-                <tr>
-                    <td><span class="role">Head</span></td>
-                    <td class="vacant">Vacant Seat</td>
-                    <td class="yr">—</td>
-                    <td>Computer</td>
-                </tr>
+                
+                
             </tbody>
         </table>
     </div>
@@ -1198,7 +1207,7 @@
     
     <div class="act-grid">
         <div class="act-card">
-            <div class="act-img" data-folder="images/youth-club" data-files="youth.jpeg">🤝</div>
+            <div class="act-img" data-folder="images/youth-club" data-files="youth.jpeg,Islamicp1.jpeg">🤝</div>
             <div class="act-body">
                 <span class="act-date">📅 Add date</span>
                 <h3>Youth Club</h3>
@@ -1207,7 +1216,7 @@
         </div>
 
         <div class="act-card">
-            <div class="act-img" data-folder="images/islamic-events" data-files="Islamicp1.jpeg,IS-certificatejpeg.jpeg,islamic.jpeg,Islami4.jpeg,">🕌</div>
+            <div class="act-img" data-folder="images/islamic-events" data-files="IS-certificatejpeg.jpeg,islamic.jpeg,Islami4.jpeg,">🕌</div>
             <div class="act-body">
                 <span class="act-date">📅 Add date</span>
                 <h3>Islamic Scholars</h3>
@@ -1286,7 +1295,7 @@
             .filter(function(f){ return f !== ""; });
         const title = box.closest(".act-card").querySelector("h3").textContent;
 
-        // har photo check hoti hai, jo nahi milti usay chhor deta hai
+        // har photo check hoti hai, jo nahi milti usay chhor deta 
         Promise.all(names.map(function(name){
             return new Promise(function(resolve){
                 const path = encodeURI(folder + "/" + name);
